@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    position: absolute;
+    padding: 20px 20px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+}
+
+.add-item-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-task {
+    flex-basis: 80%;
+    border-style: none;
+    border-bottom: 1px solid black;
+}
+
+#input-task:focus {
+    outline: none !important;
+    border: 1px solid black;
+}
+
+#input-task:focus::placeholder {
+    color: transparent;
+}
+
+#add-task-button {
+    flex-basis: 20%;
+    border: none;
+    background-color: black;
+    height: 40px;
+    color: white;
+}
+
+#add-task-button:active {
+    background-color: orange;
+    transform: translate(0%, 3%);
+}
+
+/*---List layout---*/
+#task-list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#task-list li input {
+    flex-basis: 1%;
+}
+
+#task-list li span {
+    flex-basis: 90%;
+}
+
+#task-list li i {
+    flex-basis: 1%;
+}
+
+/*---Item components---*/
+
+.task {
+    font-family: 'Indie Flower', cursive;
+    margin-left: 20px;
+}
+
+.item-checkbox {
+    margin-left: 0;
+}
+
+.delete-btn {
+    border-style: none;
+    background-color: transparent;
+}
+
+.close-icon {
+    font-size: 1.5em;
+}
+
+.close-icon:active {
+    color: orange;
+    transform: translate(0%, 3%);
+}
+
+.checked-item {
+    text-decoration: line-through;
+}
